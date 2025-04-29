@@ -1,0 +1,111 @@
+.loginContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(to top right, rgb(147, 205, 228), white);
+}
+
+.leftPart {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.rightPart {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 55px;
+}
+
+.loginLine span {
+    color: #0176D3;
+}
+
+.loginLine {
+    margin-top: 15px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputField input {
+    border-radius: 176px;
+    width: 85%;
+    height: 55px;
+    background-color: #B5B5B51A;
+    border: 1px solid #B5B5B51A;
+    font-size: 18px;
+    padding-left: 50px;
+    outline: none;
+    font-family: 'hellix';
+    font-weight: 400;
+}
+
+.emailInput {
+    margin-bottom: 15px;
+}
+
+.forgotPassword a {
+    font-size: 16px;
+    color: #131522;
+}
+
+.forgotPassword {
+    width: 85%;
+    text-align: right;
+}
+
+.submitParentBtn {
+    width: 210px;
+    height: 55px;
+    background-color: #7070701A;
+    border-radius: 220px;
+    border: 1px solid #7070701A;
+    position: relative;
+    bottom: 15px;
+}
+
+.submitBtn {
+    height: 45px;
+    width: 180px;
+    border-radius: 180px;
+    background-color: #0176D3;
+    border: 1px solid #0176D3;
+    font-size: 20px;
+    font-family: 'oswald';
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.registerPara {
+    font-size: 16px;
+    font-family: 'hellix';
+}
+
+.registerPara a {
+    color: #0176D3;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.loginLine, .inputField {
+    margin-bottom: 15px;
+}
