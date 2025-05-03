@@ -1,0 +1,90 @@
+.section {
+    width: 100%;
+    padding: 80px 50px 0px 50px;
+    font-size: 12px;
+}
+
+/* Less top padding for Documents and Links */
+.sectionCompact {
+    padding-top: 35px;
+}
+
+.sectionHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.sectionHeader h2 {
+    font-size: 22px;
+    font-family: 'Oswald';
+    font-weight: 300;
+    color: #131522;
+}
+
+.sectionHeader button {
+    background-color: #0176D3;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.cardRow {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    width: 31%;
+    padding: 20px;
+}
+
+.cardImage {
+    width: 100%;
+}
+
+.title {
+    font-family: 'Oswald';
+    font-weight: 400;
+    color: #0176D3;
+    font-size: 14px;
+}
+
+.industryDocument {
+    line-height: 2px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.industry, .document {
+    color: #A9A9A9;
+    font-weight: 400;
+}
+
+.description {
+    color: #181818;
+    font-weight: 400;;
+}
+
+.btn {
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #0176D3;
+    font-family: 'Oswald';
+    font-weight: 700;
+    border: 1px solid #0176D3;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px 0;
+}

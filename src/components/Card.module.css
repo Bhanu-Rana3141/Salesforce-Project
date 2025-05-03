@@ -3,6 +3,7 @@
     background-color: #fff;
     border-radius: 24px;
     font-family: 'hellix';
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +37,6 @@
 }
 
 .description {
-    font-size: 12px;
     color: #A9A9A9;
 }
 
@@ -50,7 +50,6 @@
 }
 
 .para {
-    font-size: 12px;
     line-height: 2px;
     font-weight: 400;
 }
@@ -61,7 +60,6 @@
 
 .dateTimePara, .eventAgendaPara {
     line-height: 5px;
-    font-size: 12px;
 }
 
 .dateTimeHeading, .eventAgenda {
@@ -86,7 +84,6 @@
 .btn1, .btn2 {
     font-weight: 700;
     font-family: 'oswald';
-    font-size: 12px;
     padding: 10px 0px;
     border-radius: 8px;
     width: 48%;

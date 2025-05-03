@@ -20,8 +20,8 @@ export default function Login() {
             <div className={styles.rightPart}>                    
                 <div className={styles.loginLine}><span>Log In </span>To Get Started</div>
                 <div className={styles.inputField}>
-                    <input className={styles.emailInput} type='email' placeholder='Enter Your Email'></input>
-                    <input type='password' placeholder='Enter Your Password'></input>
+                    <input className={styles.emailInput} type='email' placeholder='Enter Your Email' required></input>
+                    <input type='password' placeholder='Enter Your Password' required></input>
                 </div>
                 <div className={styles.forgotPassword}><Link>Forgot Password</Link></div>
                 <button className={styles.submitParentBtn}>

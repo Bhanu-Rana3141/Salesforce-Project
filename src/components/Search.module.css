@@ -1,0 +1,79 @@
+.container {
+    width: 100%;
+    font-size: 12px;
+    font-family: 'hellix';
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    color: #131522;
+    padding-right: 65px;
+}
+
+.searchBy {
+    font-size: 22px;
+    font-family: 'Oswald';
+    font-weight: 300;
+}
+
+.inputWrapper {
+    padding-left: 5px;
+    position: relative;
+    width: 40%;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 0 15px 15px;
+    border: 1px solid #131522;
+    font-family: 'hellix';
+}
+
+.input::placeholder {
+    color: #131522;
+}
+
+.icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #131522;
+    font-size: 16px;
+}
+
+.selectWrapper {
+    position: relative;
+}
+
+.recommendedSelect {
+    width: 12%;
+}
+
+.typeSelect {
+    width: 9%;
+}
+
+.select {
+    width: 100%;
+    padding: 10px 0 15px 15px;
+    border: 1px solid #131522;
+    font-family: 'hellix';
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.selectIcon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    pointer-events: none;
+    transform: translateY(-50%);
+    color: #131522;
+}
+
+.input:focus, .select:focus {
+    outline: none;
+}
