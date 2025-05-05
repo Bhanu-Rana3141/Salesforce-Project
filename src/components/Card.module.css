@@ -58,11 +58,13 @@
     color: #A9A9A9;
 }
 
-.dateTimePara, .eventAgendaPara {
+.dateTimePara,
+.eventAgendaPara {
     line-height: 5px;
 }
 
-.dateTimeHeading, .eventAgenda {
+.dateTimeHeading,
+.eventAgenda {
     color: #A9A9A9;
 }
 
@@ -81,7 +83,8 @@
     justify-content: space-between;
 }
 
-.btn1, .btn2 {
+.btn1,
+.btn2 {
     font-weight: 700;
     font-family: 'oswald';
     padding: 10px 0px;
@@ -98,60 +101,33 @@
 .btn2 {
     background-color: #0176D3;
     color: #FFFFFF;
-} 
+}
 
 @media (min-width : 1500px) {
     .cardImage {
         width: 55%;
     }
+
     .text {
         width: 42%;
     }
+
     .cardContainer {
         font-size: 16px;
     }
+
     .title {
         font-size: 18px;
     }
-    .para, .dateTimePara, .eventAgendaPara {
+
+    .para,
+    .dateTimePara,
+    .eventAgendaPara {
         line-height: 15px;
     }
+
     .container2 {
-        padding-top : 15px;
-    }
-}
-
-@media(min-width: 1900px) {
-    .cardContainer {
-        font-size: 20px;
-    }
-    .title {
-        font-size: 22px;
-    }
-}
-
-
-@media(min-width: 2100px) {
-    .cardContainer {
-        font-size: 22px;
-    }
-    .title {
-        font-size: 24px;
-    }
-    .para, .dateTimePara, .eventAgendaPara {
-        line-height: 20px;
-    }
-}
-
-@media(min-width: 2300px) {
-    .cardContainer {
-        font-size: 26px;
-    }
-    .title {
-        font-size: 28px;
-    }
-    .para, .dateTimePara, .eventAgendaPara {
-        line-height: 20px;
+        padding-top: 15px;
     }
 }
 
@@ -171,21 +147,41 @@
     .cardContainer {
         width: 300px;
     }
+
     .container1 {
         flex-direction: column;
         width: 100%;
     }
-    .cardImage, .text {
+
+    .cardImage,
+    .text {
         width: 100%;
     }
+
     .text {
         padding-top: 15px;
     }
+
     .container2 {
         font-size: 9px;
         align-items: center;
     }
-    .para, .dateTimePara, .eventAgendaPara {
+
+    .para,
+    .dateTimePara,
+    .eventAgendaPara {
         line-height: 1px;
     }
-} 
+}
+
+@media(min-width: 1900px) {
+    .cardContainer {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
+
+
