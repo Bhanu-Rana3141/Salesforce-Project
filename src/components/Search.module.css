@@ -8,7 +8,7 @@
     justify-content: flex-end;
     gap: 15px;
     color: #131522;
-    padding-right: 65px;
+    padding-right: 5%;
 }
 
 .searchBy {
@@ -76,4 +76,176 @@
 
 .input:focus, .select:focus {
     outline: none;
+}
+
+@media(max-width : 1250px) {
+    .typeSelect {
+        width: 12%;
+    }
+    .selectIcon {
+        right: 5px;
+    }
+}
+
+@media(max-width : 1152px) {
+    .recommendedSelect {
+        width: 15%;
+    }
+}
+
+@media(max-width : 923px) {
+    .recommendedSelect {
+        width: 17%;
+    }
+
+    .typeSelect {
+        width: 16%;
+    }
+}
+
+@media(max-width : 825px) {
+    .recommendedSelect {
+        width: 21%;
+    }
+    .typeSelect {
+        width: 17%;
+    }
+    .inputWrapper {
+        width: 35%;
+    }
+}
+
+@media(max-width : 700px) {
+    .container {
+        justify-content: flex-start;
+        padding-left: 5%;
+    }
+    .inputWrapper {
+        width: 43%;
+    }
+    .recommendedSelect {
+        width: 20%;
+    }
+    .searchBy {
+        font-size: 18px;
+    }
+    .input, .select {
+        padding-left: 5px;
+    }
+    .inputWrapper, .recommendedSelect, .typeSelect {
+        font-size: 10px;
+    }
+}
+
+@media(max-width : 656px) {
+    .searchBy {
+        font-size: 16px;
+    }
+    .icon {
+        font-size: 14px;
+    }
+}
+
+@media(max-width : 611px) {
+    .searchBy {
+        display: none;
+    }
+    .inputWrapper {
+        width: 55%;
+    }
+    .recommendedSelect {
+        width: 25%;
+    }
+}
+
+@media(max-width : 552px) {
+    .container {
+        gap: 10px;   
+    }
+    .inputWrapper {
+        padding-left: 0;
+        width: 47%;
+    }
+
+    .searchBy {
+        font-size: 12px;
+    }
+
+    .inputWrapper, .recommendedSelect, .typeSelect {
+        font-size: 9px;
+    }
+    .icon {
+        font-size: 10px;
+    }
+    .inputWrapper {
+        width: 50%;
+    }
+    .typeSelect {
+        width: 20%;
+    }
+}
+
+@media(max-width : 444px) {
+    .selectIcon {
+        right: 10px;
+    }
+}
+
+@media(max-width: 400px) {
+    .inputWrapper, .recommendedSelect, .typeSelect {
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 375px) {
+    .inputWrapper {
+        width: 45%;
+    }
+    .recommendedSelect {
+        width: 27%;
+    }
+    .typeSelect {
+        width: 22%;
+    }
+    .icon, .selectIcon {
+        font-size: 9px;
+        right: 5px;
+    }
+}
+
+@media(max-width: 340px) {
+    .inputWrapper {
+        width: 50%;
+    }
+    .input, .select {
+        padding-left: 2px;
+    }
+    .recommendedSelect {
+        width: 28%;
+    }
+    .typeSelect {
+        width: 23%;
+    }
+    .icon, .selectIcon {
+        font-size: 8px;
+        right: 5px;
+    }
+}
+
+@media (min-width : 1500px) {
+    .container {
+        font-size: 18px;
+    }
+    .searchBy {
+        font-size: 34px;
+    }
+}
+
+@media(min-width : 2500px) {
+    .container {
+        font-size: 20px;
+    }
+    .searchBy {
+        font-size: 36px;
+    }
 }

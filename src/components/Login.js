@@ -12,24 +12,29 @@ export default function Login() {
     }
 
     return (
-    <>
-        <div className={styles.loginContainer}>
-            <div className={styles.leftPart}>
-                <img className={styles.logo} src='images\logo.png'></img>
-            </div>
-            <div className={styles.rightPart}>                    
-                <div className={styles.loginLine}><span>Log In </span>To Get Started</div>
-                <div className={styles.inputField}>
-                    <input className={styles.emailInput} type='email' placeholder='Enter Your Email' required></input>
-                    <input type='password' placeholder='Enter Your Password' required></input>
+        <>
+            <div className={styles.loginContainer}>
+                <div className={styles.leftPart}>
+                    <img className={styles.logo} src='images\logo.png'></img>
                 </div>
-                <div className={styles.forgotPassword}><Link>Forgot Password</Link></div>
-                <button className={styles.submitParentBtn}>
-                    <button className={styles.submitBtn} onClick={handleSubmit}>Submit</button>
-                </button>
-                <p className={styles.registerPara}>Don't Have An Account ? <Link>Register</Link></p>
+                <div className={styles.rightPart}>
+                    <div className={styles.loginLine}><span>Log In </span>To Get Started</div>
+
+                    <div className={styles.inputField}>
+                        <input className={styles.emailInput} type='email' placeholder='Enter Your Email' required></input>
+                        <input type='password' placeholder='Enter Your Password' required></input>
+                    </div>
+
+                    <div className={styles.submitBtnAndPassword}>
+                        <button className={styles.submitParentBtn}>
+                            <button className={styles.submitBtn} onClick={handleSubmit}>Submit</button>
+                        </button>
+                        <div className={styles.forgotPassword}><Link>Forgot Password</Link></div>
+                    </div>
+
+                    <div className={styles.registerPara}>Don't Have An Account ? <Link>Register</Link></div>
+                </div>
             </div>
-        </div>
-    </>
-  )
+        </>
+    )
 }

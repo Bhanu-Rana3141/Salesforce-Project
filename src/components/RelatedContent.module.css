@@ -84,3 +84,58 @@
 .industry, .document {
     color: #A9A9A9;
 }
+
+@media(max-width : 940px) {
+    .leftPart {
+        width: 60%;
+    }
+    .cardRow {
+        width: 37%;
+    }
+}
+
+@media(max-width : 650px) {
+    .industryDocument {
+        font-size: 10px;
+    }
+}
+
+@media(max-width : 560px) {
+    .content {
+        flex-direction: column;
+    }
+    .leftPart, .cardRow {
+        width: 100%;
+    }
+    .cardList {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .card {
+        width: 100%;
+    }
+    .industryDocument {
+        font-size: 12px;
+    }
+}
+
+@media(min-width : 1500px) {
+    .content {
+        font-size: 22px;
+    }
+    .para {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .industryDocument {
+        font-size: 16px;
+        line-height: 10px;
+    }
+    .cardTitle {
+        font-size: 20px;
+    }
+    .title, .heading {
+        font-size: 36px;
+    }
+}

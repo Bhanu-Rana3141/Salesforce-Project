@@ -37,7 +37,6 @@
 .cardRow {
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     gap: 36px;
 }
@@ -87,4 +86,84 @@
     border-radius: 8px;
     outline: none;
     padding: 10px 0;
+}
+
+@media (max-width : 1254px) {
+    .cardRow {
+        gap: 30px;
+    }
+}
+
+@media (max-width : 1063px) {
+    .section {
+        padding: 80px 25px 0px 25px;
+    }
+    .cardRow {
+        gap: 20px;
+    }
+}
+
+@media(max-width : 900px) {
+    .card {
+        width: 45%;
+    }
+    .cardRow {
+        gap: 35px;
+    }
+}
+
+@media(max-width : 676px) {
+    .card {
+        width: 100%;
+    }
+} 
+
+@media(max-width : 500px) {
+    .sectionHeader h2 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width : 376px) {
+    .sectionHeader button {
+        font-size: 10px;
+    }
+
+    .sectionHeader h2 {
+        font-size: 16px;
+    }
+}
+
+@media(max-width : 376px) {
+    .sectionHeader button {
+        font-size: 9px;
+    }
+
+    .sectionHeader h2 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width : 1500px) {
+    .section {
+        font-size: 18px;
+    }
+    .sectionHeader h2 {
+        font-size: 34px;
+    }
+    .industryDocument {
+        line-height: 10px;
+    }
+    .cardRow {
+        gap: 40px;
+    }
+}
+
+@media(min-width : 2500px) {
+    .section {
+        font-size: 20px;
+    }
+    .sectionHeader h2 {
+        font-size: 36px;
+    }
 }

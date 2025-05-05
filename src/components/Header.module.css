@@ -6,10 +6,14 @@
     background-color: #FFFFFF;
 }
 
+.leftPart {
+    width: 20%;
+}
+
 .logo {
     height: 80px;
-    margin-left: 65px;
     padding: 15px 0px;
+    padding-left: 25%;
 }
 
 .dropdownIcon {
@@ -17,12 +21,61 @@
 }
 
 .rightPart {
-    padding-right: 35px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+    padding-right: 5%;
 }
 
 .rightPart a {
     text-decoration: none;
     color: #0176D3;
     font-family: 'oswald';
-    margin-right: 30px;
+}
+
+.hamburgerIcon {
+    display: none;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.top80 {
+    top: 80px;
+}
+
+.top120 {
+    top: 130px;
+}
+
+@media(max-width: 600px) {
+    .rightPart {
+        position: absolute;
+        background: #FFFFFF;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+        display: none;
+        padding: 10px 0 10px 30px;
+        font-size: 14px;
+    }
+
+    .showMenu {
+        display: flex;
+    }
+
+    .hamburgerIcon {
+        display: block;
+    }
+
+    .dropdownIcon {
+        height: 6.12px;
+    }
+}
+
+@media(min-width : 1500px) {
+    .rightPart a {
+        font-size: 20px;
+    }
 }

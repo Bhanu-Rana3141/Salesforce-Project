@@ -32,7 +32,6 @@ export default function RelatedContent() {
             <Search />
 
             <div className={styles.content}>
-                {/* Main Content Section */}
                 <div className={styles.leftPart}>
                     <p>
                         <img className={styles.leftImage} src='images/relatedContent.png' alt="Related" />
@@ -44,7 +43,7 @@ export default function RelatedContent() {
                     <p className={styles.para}>Stay up to date with the latest episodes, visit the Executive Conversations YouTube playlist.</p>
                 </div>
 
-                {/* Related Content Section */}
+                {/* card section */}
                 <div className={styles.cardRow}>
                     <div className={styles.heading}>
                         Related Content

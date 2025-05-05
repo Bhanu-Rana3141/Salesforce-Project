@@ -3,6 +3,7 @@
     height: 100vh;
     display: flex;
     background: linear-gradient(to top right, rgb(147, 205, 228), white);
+    font-family: 'hellix';
 }
 
 .leftPart {
@@ -27,6 +28,7 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 55px;
+    gap: 22px;
 }
 
 .loginLine span {
@@ -34,16 +36,16 @@
 }
 
 .loginLine {
-    margin-top: 15px;
     font-size: 28px;
     font-weight: 700;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald';
 }
 
 .inputField {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .inputField input {
@@ -52,45 +54,39 @@
     height: 55px;
     background-color: #B5B5B51A;
     border: none;
-    font-size: 18px;
-    padding-left: 50px;
+    font-size: 16px;
+    padding-left: 40px;
     outline: none;
-    font-family: 'hellix';
     font-weight: 400;
 }
 
-.emailInput {
-    margin-bottom: 15px;
+.submitBtnAndPassword {
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
 }
+
 
 .forgotPassword a {
     font-size: 16px;
     color: #131522;
 }
 
-.forgotPassword {
-    width: 85%;
-    text-align: right;
-}
-
 .submitParentBtn {
-    width: 210px;
+    width: 43%;
     height: 55px;
     background-color: #7070701A;
     border-radius: 220px;
     border: none;
-    position: relative;
-    bottom: 15px;
-    margin-bottom: 10px;
 }
 
 .submitBtn {
     height: 45px;
-    width: 180px;
+    width: 91%;
     border-radius: 180px;
     background-color: #0176D3;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'oswald';
     font-weight: 700;
     color: #FFFFFF;
@@ -98,7 +94,6 @@
 
 .registerPara {
     font-size: 16px;
-    font-family: 'hellix';
 }
 
 .registerPara a {
@@ -107,6 +102,51 @@
     text-decoration: none;
 }
 
-.loginLine, .inputField {
-    margin-bottom: 15px;
+@media(max-width : 767px) {
+    .leftPart {
+        display: none;
+    }
+    .rightPart {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+@media(max-width: 376px) {
+    .submitParentBtn {
+        width: 51%;
+    }
+    .submitBtn {
+        font-size: 12px;
+    }
+    .forgotPassword a {
+        font-size: 13px;
+    }
+}
+
+@media(min-width : 1500px) {
+    .loginLine {
+        font-size: 36px;
+    }
+    .inputField input {
+        font-size: 24px;
+        height: 74px;
+    }
+    .submitParentBtn {
+        height: 70px;
+        width: 258px;
+    }
+    .submitBtn {
+        font-size: 24px;
+        height: 60px;
+        width: 228px;
+    }
+    .forgotPassword a, .registerPara {
+        font-size: 20px;
+    }
+    .logo {
+        width: 241.49px;
+        height: 169px;
+    }
 }

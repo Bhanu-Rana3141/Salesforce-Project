@@ -7,48 +7,6 @@ import Section from './Section';
 
 export default function ExploreVidoes() {
 
-  const [filterType, setFilterType] = useState("all");
-
-  const getFilteredSections = () => {
-    if (filterType === "all") {
-      // Show only 3 cards per section
-      return sections.map(section => ({
-        ...section,
-        cards: section.cards.slice(0, 3)
-      }));
-    }
-
-    if (filterType === "videos") {
-      const videosSection = sections.find(sec => sec.heading.includes("Videos"));
-      return [{
-        ...videosSection,
-        cards: videosSection.cards.slice(0, 3) // 1 row
-      }];
-    }
-
-    if (filterType === "documents") {
-      const documentsSection = sections.find(sec => sec.heading.includes("Documents"));
-      // Duplicate cards to get 6 cards (2 rows with same 3 cards repeated)
-      const repeatedCards = [...documentsSection.cards, ...documentsSection.cards];
-      return [{
-        ...documentsSection,
-        cards: repeatedCards.slice(0, 6)
-      }];
-    }
-
-    if (filterType === "weblinks") {
-      const linksSection = sections.find(sec => sec.heading.includes("Links"));
-      // Duplicate cards to get 6 cards (2 rows with same 3 cards repeated)
-      const repeatedCards = [...linksSection.cards, ...linksSection.cards];
-      return [{
-        ...linksSection,
-        cards: repeatedCards.slice(0, 6)
-      }];
-    }
-
-    return [];
-  };
-
   const sections = [
     {
       heading: "Explore Videos",
@@ -135,6 +93,48 @@ export default function ExploreVidoes() {
       ]
     }
   ]
+
+  const [filterType, setFilterType] = useState("all");
+
+  const getFilteredSections = () => {
+    if (filterType === "all") {
+      // Show only 3 cards per section
+      return sections.map(section => ({
+        ...section,
+        cards: section.cards
+      }));
+    }
+
+    if (filterType === "videos") {
+      const videosSection = sections.find(sec => sec.heading.includes("Videos"));
+      return [{
+        ...videosSection,
+        cards: videosSection.cards.slice(0, 3) // 1 row
+      }];
+    }
+
+    if (filterType === "documents") {
+      const documentsSection = sections.find(sec => sec.heading.includes("Documents"));
+      // Duplicate cards to get 6 cards (2 rows with same 3 cards repeated)
+      const repeatedCards = [...documentsSection.cards, ...documentsSection.cards];
+      return [{
+        ...documentsSection,
+        cards: repeatedCards
+      }];
+    }
+
+    if (filterType === "weblinks") {
+      const linksSection = sections.find(sec => sec.heading.includes("Links"));
+      // Duplicate cards to get 6 cards (2 rows with same 3 cards repeated)
+      const repeatedCards = [...linksSection.cards, ...linksSection.cards];
+      return [{
+        ...linksSection,
+        cards: repeatedCards
+      }];
+    }
+
+    return [];
+  };
 
   return (
     <>
