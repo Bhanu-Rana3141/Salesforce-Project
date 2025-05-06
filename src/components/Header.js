@@ -26,9 +26,10 @@ export default function Header() {
         </div>
 
         <div className={`${styles.rightPart} ${isMenuOpen ? styles.showMenu : ''} ${isHome ? styles.top80 : styles.top120}`}>
-          <Link to=''>About Us</Link>
+          <Link to='/home'>Home</Link>
+          <Link to='/explore-videos'>Explore</Link>
+          <Link to='/related-content'>Content</Link>
           <Link to=''>Resources <img className={styles.dropdownIcon} src='images\dropdownIcon.png'></img> </Link>
-          <Link to=''>Recommendation</Link>
           <Link to=''>Profile <img className={styles.dropdownIcon} src='images\dropdownIcon.png'></img></Link>
         </div>
       </div>

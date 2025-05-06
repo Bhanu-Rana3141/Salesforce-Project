@@ -9,3 +9,9 @@
     width: 90%;
     background-color: #F4F4F4;
 }
+
+@media(max-width : 370px) {
+    .contentArea {
+        width: 100%;
+    }
+}
